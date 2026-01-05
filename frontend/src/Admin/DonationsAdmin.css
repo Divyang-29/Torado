@@ -1,0 +1,74 @@
+.admin-donations {
+  padding: 30px;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+.admin-donations h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.donation-table-wrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.donation-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.donation-table th,
+.donation-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  text-align: left;
+}
+
+.donation-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+.donation-table tr:hover {
+  background: #f9fafb;
+}
+
+/* PAYMENT BADGES */
+.status {
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+
+.status.cash {
+  background: #fef3c7;
+  color: #92400e;
+}
+
+.status.card {
+  background: #dbeafe;
+  color: #1e40af;
+}
+
+.status.paypal {
+  background: #ede9fe;
+  color: #5b21b6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .donation-table th,
+  .donation-table td {
+    padding: 12px;
+    font-size: 13px;
+  }
+}

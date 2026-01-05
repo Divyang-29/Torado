@@ -1,0 +1,57 @@
+.admin-volunteer {
+  padding: 30px;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+.admin-volunteer h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.volunteer-table-wrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.volunteer-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.volunteer-table th,
+.volunteer-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.volunteer-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+.volunteer-table tr:hover {
+  background: #f9fafb;
+}
+
+/* ABOUT COLUMN */
+.about-cell {
+  max-width: 280px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .volunteer-table th,
+  .volunteer-table td {
+    font-size: 13px;
+    padding: 12px;
+  }
+}

@@ -1,0 +1,94 @@
+/* HERO */
+.issues-hero {
+  background: #14347c;
+  padding: 90px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.issues-hero h1 {
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+.issues-hero span {
+  color: #1bb1e7;
+}
+
+/* SECTION */
+.issues-section {
+  padding: 80px 20px;
+  background: #fafafa;
+}
+
+.issues-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.issue-card {
+  background: #fff;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* IMAGE */
+.issue-image {
+  position: relative;
+}
+
+.issue-image img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* ICON */
+.issue-icon {
+  position: absolute;
+  right: 20px;
+  bottom: -20px;
+  background: #1bb1e7;
+  color: #fff;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+/* CONTENT */
+.issue-content {
+  padding: 40px 20px 25px;
+}
+
+.issue-content h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+.issue-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1000px) {
+  .issues-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .issues-grid {
+    grid-template-columns: 1fr;
+  }
+}

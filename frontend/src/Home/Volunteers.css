@@ -1,0 +1,83 @@
+.volunteer-section {
+  padding: 120px 20px 80px;
+  text-align: center;
+}
+
+.section-tag {
+  color: #e6003e;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
+.volunteer-section h2 {
+  font-size: 38px;
+  margin: 15px 0 50px;
+}
+
+.volunteer-grid {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.volunteer-card {
+  background: #fff;
+  width: 220px;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.08);
+}
+
+.volunteer-card img {
+  width: 100%;
+  border-radius: 12px;
+  margin-bottom: 15px;
+}
+
+.volunteer-card h4 {
+  font-size: 16px;
+  margin-bottom: 5px;
+}
+
+.volunteer-card p {
+  font-size: 13px;
+  color: #777;
+}
+
+.socials {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 12px;
+}
+
+.socials span {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.dots {
+  margin-top: 35px;
+}
+
+.dots span {
+  width: 8px;
+  height: 8px;
+  background: #ccc;
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+
+.dots .active {
+  background: #1fb6e6;
+}

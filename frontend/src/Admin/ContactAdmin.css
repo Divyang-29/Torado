@@ -1,0 +1,57 @@
+.admin-contact {
+  padding: 30px;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+.admin-contact h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* TABLE */
+.contact-table-wrapper {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow-x: auto;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+}
+
+.contact-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+.contact-table th,
+.contact-table td {
+  padding: 14px 16px;
+  border-bottom: 1px solid #e5e7eb;
+  vertical-align: top;
+}
+
+.contact-table th {
+  background: #f1f5f9;
+  font-weight: 600;
+}
+
+.contact-table tr:hover {
+  background: #f9fafb;
+}
+
+/* MESSAGE */
+.message-cell {
+  max-width: 300px;
+  white-space: pre-wrap;
+  line-height: 1.5;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .contact-table th,
+  .contact-table td {
+    font-size: 13px;
+    padding: 12px;
+  }
+}

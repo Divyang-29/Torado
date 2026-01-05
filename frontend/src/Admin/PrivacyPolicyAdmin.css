@@ -1,0 +1,36 @@
+.admin-privacy {
+  padding: 30px;
+  background: #f7f8fa;
+  min-height: 100vh;
+}
+
+.admin-privacy h2 {
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+
+.policy-title {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 16px;
+}
+
+.policy-editor {
+  width: 100%;
+  min-height: 300px;
+  padding: 14px;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 20px;
+}
+
+.admin-privacy button {
+  padding: 12px 30px;
+  background: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}

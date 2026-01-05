@@ -1,0 +1,131 @@
+.blog-section {
+  padding: 120px 20px;
+  text-align: center;
+  background: #fff;
+}
+
+.blog-tag {
+  color: #ff003c;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.blog-section h2 {
+  font-size: 42px;
+  margin: 15px 0 60px;
+  line-height: 1.3;
+}
+
+/* GRID */
+.blog-grid {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}
+
+/* CARD */
+.blog-card {
+  background: #fff;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease;
+}
+
+.blog-card:hover {
+  transform: translateY(-8px);
+}
+
+/* IMAGE */
+.blog-img {
+  position: relative;
+}
+
+.blog-img img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+/* DATE BADGE */
+.date-badge {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  background: #1fb6e6;
+  color: #fff;
+  width: 55px;
+  height: 55px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+}
+
+.date-badge.active {
+  background: #e6003e;
+}
+
+.date-badge span {
+  font-size: 18px;
+  line-height: 1;
+}
+
+.date-badge small {
+  font-size: 12px;
+}
+
+/* CONTENT */
+.blog-content {
+  padding: 25px;
+  text-align: left;
+}
+
+.blog-meta {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  color: #777;
+  margin-bottom: 12px;
+}
+
+.blog-content h3 {
+  font-size: 20px;
+  margin-bottom: 12px;
+}
+
+.blog-content p {
+  font-size: 14px;
+  color: #666;
+  line-height: 1.6;
+}
+
+/* READ MORE */
+.read-more {
+  margin-top: 18px;
+  background: none;
+  border: none;
+  color: #666;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.read-more.active {
+  color: #e6003e;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .blog-section h2 {
+    font-size: 34px;
+  }
+}

@@ -1,0 +1,113 @@
+.fight-section {
+  background: linear-gradient(135deg, #0f2a66, #1b3c87);
+  padding: 120px 40px;
+  color: #fff;
+}
+
+.fight-container {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.1fr 1fr;
+  gap: 60px;
+  align-items: center;
+}
+
+/* LEFT */
+.fight-subtitle {
+  color: #1fb6e6;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.fight-left h2 {
+  font-size: 42px;
+  margin: 15px 0 20px;
+  line-height: 1.3;
+}
+
+.fight-desc {
+  color: #d0d8f0;
+  max-width: 520px;
+  margin-bottom: 40px;
+}
+
+/* FAQ */
+.faq {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.faq-item {
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  padding: 18px 22px;
+  cursor: pointer;
+}
+
+.faq-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-header h4 {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.faq-header .icon {
+  font-size: 22px;
+  color: #e6003e;
+  font-weight: bold;
+}
+
+.faq-body {
+  margin-top: 12px;
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+}
+
+/* RIGHT VIDEO */
+.video-box {
+  position: relative;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.video-box img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.play-btn {
+  position: absolute;
+  inset: 0;
+  margin: auto;
+  width: 90px;
+  height: 90px;
+  background: rgba(255, 255, 255, 0.9);
+  color: #1fb6e6;
+  font-size: 34px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .fight-container {
+    grid-template-columns: 1fr;
+  }
+
+  .fight-left h2 {
+    font-size: 34px;
+  }
+}

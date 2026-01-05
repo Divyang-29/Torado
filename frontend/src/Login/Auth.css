@@ -1,0 +1,172 @@
+/* HERO HEADER */
+.auth-hero {
+  background: #14347c;
+  padding: 80px 20px;
+  text-align: center;
+  color: #fff;
+}
+
+.auth-hero h1 {
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.auth-hero p {
+  font-size: 14px;
+}
+
+.auth-hero span {
+  color: #00c0ef;
+}
+
+/* FORM SECTION */
+.auth-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+}
+
+/* CARD */
+.auth-card {
+  background: #fff;
+  width: 100%;
+  max-width: 520px;
+  padding: 40px;
+  border-radius: 6px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-card h2 {
+  margin-bottom: 20px;
+}
+
+/* INPUTS */
+.auth-card input {
+  width: 100%;
+  padding: 14px;
+  margin-bottom: 16px;
+  border: none;
+  background: #f6f6f6;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+/* ROW */
+.auth-row {
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.auth-row span {
+  color: #e63946;
+  cursor: pointer;
+}
+
+/* BUTTONS */
+.auth-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1bb1e7;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-bottom: 14px;
+}
+
+.google-btn {
+  width: 100%;
+  padding: 14px;
+  background: #1bb1e7;
+  color: #fff;
+  border: none;
+  font-size: 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.google-btn span {
+  font-weight: bold;
+  background: #fff;
+  color: #1bb1e7;
+  padding: 2px 6px;
+  border-radius: 50%;
+}
+
+/* FOOTER */
+.auth-footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 14px;
+}
+
+.auth-footer span {
+  color: #e63946;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.error {
+  color: #e63946;
+  margin-bottom: 14px;
+  font-size: 14px;
+}
+
+/* ROLE SELECT (USER / ADMIN) */
+.auth-card select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  color: #333;
+  background-color: #fff;
+  outline: none;
+  cursor: pointer;
+  appearance: none;        /* remove default arrow */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  margin-bottom: 15px;
+}
+
+/* CUSTOM DROPDOWN ARROW */
+.auth-card select {
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='14' height='14' viewBox='0 0 24 24' fill='none' stroke='%23666' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  background-size: 14px;
+}
+
+/* HOVER */
+.auth-card select:hover {
+  border-color: #bbb;
+}
+
+/* FOCUS */
+.auth-card select:focus {
+  border-color: #111;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.05);
+}
+
+/* OPTION STYLE */
+.auth-card select option {
+  padding: 10px;
+  font-size: 14px;
+}
+
+/* DISABLED STATE (IF USED LATER) */
+.auth-card select:disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+}
+
+.auth-label {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}

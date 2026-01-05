@@ -1,0 +1,103 @@
+/* HERO */
+.volunteer-hero {
+  background: #163a7d;
+  color: #ffffff;
+  text-align: center;
+  padding: 80px 20px;
+}
+
+.volunteer-hero h1 {
+  font-size: 36px;
+  font-weight: 700;
+}
+
+.volunteer-hero p {
+  margin-top: 10px;
+  font-size: 14px;
+}
+
+.volunteer-hero span {
+  color: #ffd166;
+}
+
+/* SECTION */
+.volunteer-section {
+  padding: 80px 20px;
+  display: flex;
+  justify-content: center;
+  background: #ffffff;
+}
+
+/* FORM */
+.volunteer-form {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* GRID */
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+/* INPUTS */
+.volunteer-form label {
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 6px;
+  display: block;
+}
+
+.volunteer-form input,
+.volunteer-form textarea {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 4px;
+  border: 1px solid #e5e7eb;
+  background: #f3f3f3;
+  font-size: 14px;
+  outline: none;
+}
+
+.volunteer-form input:focus,
+.volunteer-form textarea:focus {
+  border-color: #e11d48;
+  background: #ffffff;
+}
+
+/* TEXTAREA */
+.full-width {
+  margin-top: 20px;
+}
+
+.full-width textarea {
+  min-height: 160px;
+  resize: vertical;
+}
+
+/* BUTTON */
+.volunteer-btn {
+  margin: 30px auto 0;
+  display: block;
+  padding: 12px 30px;
+  background: #e11d48;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.volunteer-btn:hover {
+  background: #be123c;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,76 @@
+.admin-blog {
+  max-width: 1000px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.blog-form {
+  background: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  display: grid;
+  gap: 15px;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+}
+
+.blog-form input,
+.blog-form textarea {
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+}
+
+.blog-form textarea {
+  min-height: 120px;
+}
+
+.blog-form button {
+  background: #111;
+  color: #fff;
+  padding: 12px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.blog-table {
+  margin-top: 40px;
+  display: grid;
+  gap: 20px;
+}
+
+.blog-row {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  background: #fafafa;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+.blog-row img {
+  width: 100px;
+  height: 70px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.blog-info {
+  flex: 1;
+}
+
+.actions button {
+  margin-left: 8px;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.actions .edit {
+  background: #007bff;
+  color: #fff;
+}
+
+.actions .delete {
+  background: #dc3545;
+  color: #fff;
+}

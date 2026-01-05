@@ -1,0 +1,195 @@
+/* SECTION */
+.campaign {
+  padding: 100px 40px;
+  background: #fff;
+}
+
+/* ================= TOP CARDS ================= */
+.campaign-cards {
+  max-width: 1200px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 100px;
+}
+
+.card {
+  background: #f3f3f3;
+  padding: 35px;
+  border-radius: 12px;
+}
+
+.card h4 {
+  margin-top: 15px;
+  font-size: 18px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 8px;
+}
+
+.card.active {
+  background: #e6003e;
+  color: #fff;
+}
+
+.card.active p {
+  color: #ffd6e0;
+}
+
+/* ICONS */
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+}
+
+.icon.blue {
+  background: #1fb6e6;
+  color: #fff;
+}
+
+.icon.white {
+  background: #fff;
+  color: #e6003e;
+}
+
+/* ================= MAIN CONTENT ================= */
+.campaign-content {
+  max-width: 1300px;
+  margin: auto;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+
+/* LEFT TEXT */
+.campaign-text {
+  flex: 1;
+}
+
+.sub-title {
+  color: #e6003e;
+  font-weight: 600;
+  letter-spacing: 1px;
+  font-size: 14px;
+}
+
+.campaign-text h2 {
+  font-size: 42px;
+  margin: 15px 0 20px;
+  line-height: 1.3;
+}
+
+.description {
+  color: #666;
+  max-width: 520px;
+  margin-bottom: 35px;
+}
+
+/* CHECKLIST */
+.checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.check-item {
+  display: flex;
+  gap: 18px;
+}
+
+.check {
+  width: 40px;
+  height: 40px;
+  background: #dff4fb;
+  color: #1fb6e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.check-item h5 {
+  font-size: 18px;
+}
+
+.check-item p {
+  font-size: 14px;
+  color: #666;
+  margin-top: 5px;
+}
+
+/* ================= IMAGES ================= */
+.campaign-images {
+  flex: 1;
+  position: relative;
+}
+
+.campaign-images img {
+  border-radius: 16px;
+  object-fit: cover;
+}
+
+.img-one {
+  width: 70%;
+}
+
+.img-two {
+  width: 55%;
+  position: absolute;
+  bottom: -40px;
+  right: 0;
+}
+
+/* BADGE */
+.badge {
+  position: absolute;
+  bottom: 20px;
+  left: 30%;
+  background: #fff;
+  padding: 22px 28px;
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.badge h3 {
+  color: #e6003e;
+  font-size: 30px;
+}
+
+.badge span {
+  font-size: 14px;
+  color: #555;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 1024px) {
+  .campaign-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .campaign-content {
+    flex-direction: column;
+  }
+
+  .img-two {
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+  }
+
+  .badge {
+    position: static;
+    margin-top: 20px;
+  }
+}

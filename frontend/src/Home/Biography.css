@@ -1,0 +1,120 @@
+.biography-section {
+  background: linear-gradient(
+      rgba(10, 45, 120, 0.92),
+      rgba(10, 45, 120, 0.92)
+    ),
+    url("https://torado.envytheme.com/election-campaign-political/default/assets/images/shape/bg-shape.png");
+  padding: 120px 20px;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.bio-tag {
+  color: #ff003c;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+
+.biography-section h2 {
+  font-size: 42px;
+  margin: 15px 0 60px;
+  line-height: 1.3;
+}
+
+/* CARD */
+.bio-card {
+  background: #fff;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+  padding: 30px;
+  position: relative;
+  box-shadow: 0 30px 60px rgba(0, 0, 0, 0.25);
+}
+
+.bio-image img {
+  width: 420px;
+  height: 260px;
+  object-fit: cover;
+  border-radius: 14px;
+}
+
+/* YEAR BADGE */
+.bio-year {
+  position: absolute;
+  left: 380px;
+  background: #e6003e;
+  color: #fff;
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 26px;
+  font-weight: 700;
+  box-shadow: 0 15px 35px rgba(230, 0, 62, 0.5);
+}
+
+/* CONTENT */
+.bio-content {
+  padding-left: 80px;
+  text-align: left;
+}
+
+.bio-content h3 {
+  font-size: 26px;
+  color: #111;
+  margin-bottom: 15px;
+}
+
+.bio-content p {
+  color: #666;
+  line-height: 1.7;
+  max-width: 420px;
+}
+
+/* DOTS */
+.bio-dots {
+  margin-top: 35px;
+}
+
+.bio-dots span {
+  width: 10px;
+  height: 10px;
+  background: rgba(255, 255, 255, 0.4);
+  display: inline-block;
+  border-radius: 50%;
+  margin: 0 5px;
+}
+
+.bio-dots .active {
+  background: #1fb6e6;
+}
+
+/* RESPONSIVE */
+@media (max-width: 900px) {
+  .bio-card {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .bio-image img {
+    width: 100%;
+    height: 220px;
+  }
+
+  .bio-year {
+    position: static;
+    margin: 20px auto;
+  }
+
+  .bio-content {
+    padding: 0;
+    text-align: center;
+  }
+}

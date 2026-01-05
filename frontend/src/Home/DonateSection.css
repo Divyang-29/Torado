@@ -1,0 +1,126 @@
+.donate-section {
+  padding: 100px 40px;
+  background: #fff;
+  text-align: center;
+}
+
+.donate-subtitle {
+  color: #e6003e;
+  font-weight: 600;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.donate-title {
+  font-size: 42px;
+  margin: 15px 0 60px;
+  line-height: 1.3;
+}
+
+/* WRAPPER */
+.donate-wrapper {
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 1.2fr 1fr;
+  gap: 20px;
+  align-items: stretch;
+}
+
+/* IMAGE */
+.donate-image img {
+  width: 100%;
+  height: 100%;
+  border-radius: 14px;
+  object-fit: cover;
+}
+
+/* CENTER CARD */
+.donate-card {
+  background: #fff;
+  border-radius: 14px;
+  padding: 40px;
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.08);
+  text-align: left;
+}
+
+.donate-card h3 {
+  font-size: 22px;
+  margin-bottom: 25px;
+}
+
+/* AMOUNTS */
+.amounts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 30px;
+}
+
+.amounts button {
+  padding: 12px 22px;
+  border-radius: 6px;
+  border: 1px solid #ddd;
+  background: #f7f7f7;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.amounts button.active {
+  background: #1fb6e6;
+  color: #fff;
+  border-color: #1fb6e6;
+}
+
+/* DONATE BUTTON */
+.donate-btn {
+  background: #e6003e;
+  color: #fff;
+  padding: 14px 36px;
+  border-radius: 8px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* BROCHURE */
+.donate-brochure {
+  background: #1fb6e6;
+  border-radius: 14px;
+  padding: 40px;
+  color: #fff;
+  text-align: left;
+}
+
+.donate-brochure h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+}
+
+.donate-brochure p {
+  font-size: 14px;
+  line-height: 1.7;
+  margin-bottom: 25px;
+}
+
+.brochure-btn {
+  background: #fff;
+  color: #1fb6e6;
+  border: none;
+  padding: 12px 28px;
+  border-radius: 6px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .donate-wrapper {
+    grid-template-columns: 1fr;
+  }
+
+  .donate-title {
+    font-size: 34px;
+  }
+}
