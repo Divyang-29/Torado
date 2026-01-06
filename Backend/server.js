@@ -20,6 +20,9 @@ app.use("/api/candidates", require("./routes/candidateRoutes"));
 app.use("/api/volunteer", require("./routes/volunteerRoutes"));
 app.use("/api/gallery", require("./routes/galleryRoutes"));
 app.use("/api/privacy-policy", require("./routes/privacyPolicyRoutes"));
+app.use("/api/testimonials", require("./routes/testimonialRoutes"));
+app.use("/api/terms", require("./routes/termsRoutes"));
+
 
 mongoose
   .connect(process.env.MONGO_URL)

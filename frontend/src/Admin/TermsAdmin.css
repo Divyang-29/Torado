@@ -1,0 +1,26 @@
+.admin-terms {
+  padding: 30px;
+}
+
+.admin-terms input,
+.admin-terms textarea {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 12px;
+}
+
+.admin-terms button {
+  background: #e11d48;
+  color: #fff;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 6px;
+}
+
+.terms-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 12px;
+  background: #f5f5f5;
+  margin-top: 10px;
+}

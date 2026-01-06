@@ -53,7 +53,7 @@ export default function Navbar() {
               <li onClick={() => navigate("/testimonials")}>
                 Our Testimonials
               </li>
-              <li onClick={() => navigate("/team")}>Our Team</li>
+              <li onClick={() => navigate("/candidates")}>Our Team</li>
               <li onClick={() => navigate("/faq")}>FAQ's</li>
               <li onClick={() => navigate("/gallery")}>Gallery</li>
               <li className="highlight" onClick={() => navigate("/login")}>

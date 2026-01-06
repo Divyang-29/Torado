@@ -1,0 +1,35 @@
+.terms-hero {
+  background: #163a7d;
+  color: #fff;
+  padding: 90px 20px;
+  text-align: center;
+}
+
+.terms-hero span {
+  color: #ffd166;
+}
+
+.terms-section {
+  padding: 100px 20px;
+}
+
+.terms-container {
+  max-width: 900px;
+  margin: auto;
+}
+
+.terms-block {
+  margin-bottom: 35px;
+}
+
+.terms-block h3 {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.terms-block p {
+  font-size: 15px;
+  line-height: 1.8;
+  color: #555;
+}

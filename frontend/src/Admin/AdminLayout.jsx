@@ -54,6 +54,14 @@ export default function AdminLayout() {
             <span>🔒</span>
             Privacy Policy
           </NavLink>
+           <NavLink to="/admin/testimonials">
+            <span>⭐</span>
+            Testimonials
+          </NavLink>
+           <NavLink to="/admin/terms">
+            <span>⚖️</span>
+            Terms
+          </NavLink>
         </nav>
       </aside>
 

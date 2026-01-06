@@ -30,6 +30,12 @@ import GalleryAdmin from "./Admin/GalleryAdmin";
 import Gallery from "./Gallery/Gallery";
 import PrivacyPolicy from "./PrivacyPolicy";
 import PrivacyPolicyAdmin from "./Admin/PrivacyPolicyAdmin";
+import AboutUs from "./AboutUs/AboutUs";
+import Testimonials from "./Testimonials/Testimonials";
+import TestimonialsAdmin from "./Admin/TestimonialsAdmin";
+import Faq from "./Faq/Faq";
+import Terms from "./Terms/Terms";
+import TermsAdmin from "./Admin/TermsAdmin";
 
 function App() {
   const location = useLocation();
@@ -56,6 +62,11 @@ function App() {
         <Route path="/volunteer" element={<Volunteer />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/about" element={<AboutUs/>}/>
+        <Route path="/testimonials" element={<Testimonials/>}/>
+        <Route path="/faq" element={<Faq/>}/>
+        <Route path="/register" element={<Register/>}/>
+        <Route path="/terms" element={<Terms/>}/>
         
 
         {/* ADMIN ROUTES */}
@@ -69,6 +80,8 @@ function App() {
           <Route path="volunteers" element={<VolunteersAdmin />} />
           <Route path="gallery" element={<GalleryAdmin />} />
           <Route path="privacy-policy" element={<PrivacyPolicyAdmin />} />
+          <Route path="testimonials" element={<TestimonialsAdmin/>}/>
+          <Route path="terms" element={<TermsAdmin/>}/>
         </Route>
       </Routes>
 
