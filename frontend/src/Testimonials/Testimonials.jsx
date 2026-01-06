@@ -6,7 +6,7 @@ export default function Testimonials() {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/testimonials")
+    axios.get("https://torado.onrender.com/api/testimonials")
       .then(res => setData(res.data));
   }, []);
 

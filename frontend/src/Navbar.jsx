@@ -48,7 +48,7 @@ export default function Navbar() {
             Pages +
             <ul className={`dropdown-menu ${pagesOpen ? "show" : ""}`}>
               <li onClick={() => navigate("/about")}>About Us</li>
-              <li onClick={() => navigate("/donation")}>Donation</li>
+              <li onClick={() => navigate("/donate")}>Donation</li>
               <li onClick={() => navigate("/volunteer")}>Become A Volunteer</li>
               <li onClick={() => navigate("/testimonials")}>
                 Our Testimonials

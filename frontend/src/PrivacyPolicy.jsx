@@ -7,7 +7,7 @@ export default function PrivacyPolicy() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/privacy-policy")
+      .get("https://torado.onrender.com/api/privacy-policy")
       .then((res) => setPolicy(res.data));
   }, []);
 

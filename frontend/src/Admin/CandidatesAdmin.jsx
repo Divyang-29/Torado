@@ -18,7 +18,7 @@ export default function CandidatesAdmin() {
   }, []);
 
   const fetchCandidates = async () => {
-    const res = await axios.get("http://localhost:8080/api/candidates");
+    const res = await axios.get("https://torado.onrender.com/api/candidates");
     setCandidates(res.data);
   };
 
@@ -34,11 +34,11 @@ export default function CandidatesAdmin() {
 
     if (editingId) {
       await axios.put(
-        `http://localhost:8080/api/candidates/${editingId}`,
+        `https://torado.onrender.com/api/candidates/${editingId}`,
         form
       );
     } else {
-      await axios.post("http://localhost:8080/api/candidates", form);
+      await axios.post("https://torado.onrender.com/api/candidates", form);
     }
 
     setForm({ name: "", role: "", image: "" });
@@ -53,7 +53,7 @@ export default function CandidatesAdmin() {
 
   const deleteCandidate = async (id) => {
     if (!window.confirm("Delete this candidate?")) return;
-    await axios.delete(`http://localhost:8080/api/candidates/${id}`);
+    await axios.delete(`https://torado.onrender.com/api/candidates/${id}`);
     fetchCandidates();
   };
 

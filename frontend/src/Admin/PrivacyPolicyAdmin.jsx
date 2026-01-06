@@ -8,7 +8,7 @@ export default function PrivacyPolicyAdmin() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/privacy-policy")
+      .get("https://torado.onrender.com/privacy-policy")
       .then((res) => {
         if (res.data) {
           setTitle(res.data.title);
@@ -18,7 +18,7 @@ export default function PrivacyPolicyAdmin() {
   }, []);
 
   const savePolicy = async () => {
-    await axios.post("http://localhost:8080/api/privacy-policy", {
+    await axios.post("https://torado.onrender.com/api/privacy-policy", {
       title,
       content,
     });

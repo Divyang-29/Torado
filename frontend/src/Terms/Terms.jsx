@@ -7,7 +7,7 @@ export default function Terms() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/terms")
+      .get("https://torado.onrender.com/api/terms")
       .then((res) => setTerms(res.data));
   }, []);
 

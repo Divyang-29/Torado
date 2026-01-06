@@ -7,7 +7,7 @@ export default function Gallery() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/gallery")
+      .get("https://torado.onrender.com/api/gallery")
       .then((res) => setImages(res.data));
   }, []);
 

@@ -13,19 +13,19 @@ export default function TestimonialsAdmin() {
   });
 
   const load = () =>
-    axios.get("http://localhost:8080/api/testimonials")
+    axios.get("https://torado.onrender.com/api/testimonials")
       .then(res => setData(res.data));
 
   useEffect(() => { load(); }, []);
 
   const submit = async () => {
-    await axios.post("http://localhost:8080/api/testimonials", form);
+    await axios.post("https://torado.onrender.com/api/testimonials", form);
     setForm({ name: "", role: "", image: "", message: "", rating: 5 });
     load();
   };
 
   const remove = async (id) => {
-    await axios.delete(`http://localhost:8080/api/testimonials/${id}`);
+    await axios.delete(`https://torado.onrender.com/api/testimonials/${id}`);
     load();
   };
 

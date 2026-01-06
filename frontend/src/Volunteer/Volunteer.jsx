@@ -21,7 +21,7 @@ export default function Volunteer() {
     e.preventDefault();
 
     try {
-      await axios.post("http://localhost:8080/api/volunteer", form);
+      await axios.post("https://torado.onrender.com/api/volunteer", form);
       alert("Volunteer form submitted successfully");
 
       setForm({
@@ -34,7 +34,7 @@ export default function Volunteer() {
         about: "",
       });
     } catch (err) {
-      alert("Something went wrong");
+      alert("Something went wrong",err);
     }
   };
 

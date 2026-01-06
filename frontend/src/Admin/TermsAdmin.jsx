@@ -7,7 +7,7 @@ export default function TermsAdmin() {
   const [form, setForm] = useState({ title: "", content: "" });
 
   const fetchTerms = () => {
-    axios.get("http://localhost:8080/api/terms")
+    axios.get("https://torado.onrender.com/api/terms")
       .then((res) => setTerms(res.data));
   };
 
@@ -17,13 +17,13 @@ export default function TermsAdmin() {
 
   const submit = async () => {
     if (!form.title || !form.content) return alert("All fields required");
-    await axios.post("http://localhost:8080/api/terms", form);
+    await axios.post("https://torado.onrender.com/api/terms", form);
     setForm({ title: "", content: "" });
     fetchTerms();
   };
 
   const remove = async (id) => {
-    await axios.delete(`http://localhost:8080/api/terms/${id}`);
+    await axios.delete(`https://torado.onrender.com/api/terms/${id}`);
     fetchTerms();
   };
 

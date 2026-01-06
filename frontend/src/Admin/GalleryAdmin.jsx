@@ -8,7 +8,7 @@ export default function GalleryAdmin() {
 
   const fetchImages = () => {
     axios
-      .get("http://localhost:8080/api/gallery")
+      .get("https://torado.onrender.com/api/gallery")
       .then((res) => setImages(res.data));
   };
 
@@ -19,13 +19,13 @@ export default function GalleryAdmin() {
   const addImage = async () => {
     if (!image) return alert("Image URL required");
 
-    await axios.post("http://localhost:8080/api/gallery", { image });
+    await axios.post("https://torado.onrender.com/api/gallery", { image });
     setImage("");
     fetchImages();
   };
 
   const deleteImage = async (id) => {
-    await axios.delete(`http://localhost:8080/api/gallery/${id}`);
+    await axios.delete(`https://torado.onrender.com/api/gallery/${id}`);
     fetchImages();
   };
 

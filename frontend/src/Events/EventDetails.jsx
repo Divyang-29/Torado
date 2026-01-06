@@ -12,12 +12,12 @@ export default function EventDetails() {
   useEffect(() => {
     // Fetch event
     axios
-      .get(`http://localhost:8080/api/events/${id}`)
+      .get(`https://torado.onrender.com/api/events/${id}`)
       .then((res) => setEvent(res.data));
 
     // Fetch candidates as speakers
     axios
-      .get("http://localhost:8080/api/candidates")
+      .get("https://torado.onrender.com/api/candidates")
       .then((res) => setSpeakers(res.data));
   }, [id]);
 

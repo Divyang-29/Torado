@@ -9,7 +9,7 @@ export default function Events() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/events")
+      .get("https://torado.onrender.com/api/events")
       .then((res) => setEvents(res.data));
   }, []);
 

@@ -18,7 +18,7 @@ export default function IssuesAdmin() {
   }, []);
 
   const fetchIssues = async () => {
-    const res = await axios.get("http://localhost:8080/api/issues");
+    const res = await axios.get("https://torado.onrender.com/api/issues");
     setIssues(res.data);
   };
 
@@ -34,11 +34,11 @@ export default function IssuesAdmin() {
 
     if (editingId) {
       await axios.put(
-        `http://localhost:8080/api/issues/${editingId}`,
+        `https://torado.onrender.com/api/issues/${editingId}`,
         form
       );
     } else {
-      await axios.post("http://localhost:8080/api/issues", form);
+      await axios.post("https://torado.onrender.com/api/issues", form);
     }
 
     setForm({ title: "", image: "", description: "" });
@@ -53,7 +53,7 @@ export default function IssuesAdmin() {
 
   const deleteIssue = async (id) => {
     if (!window.confirm("Delete this issue?")) return;
-    await axios.delete(`http://localhost:8080/api/issues/${id}`);
+    await axios.delete(`https://torado.onrender.com/api/issues/${id}`);
     fetchIssues();
   };
 

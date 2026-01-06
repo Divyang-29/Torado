@@ -7,7 +7,7 @@ export default function Candidates() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/candidates")
+      .get("https://torado.onrender.com/api/candidates")
       .then((res) => setCandidates(res.data));
   }, []);
 

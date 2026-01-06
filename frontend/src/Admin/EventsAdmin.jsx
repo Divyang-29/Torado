@@ -21,7 +21,7 @@ export default function EventsAdmin() {
   }, []);
 
   const fetchEvents = async () => {
-    const res = await axios.get("http://localhost:8080/api/events");
+    const res = await axios.get("https://torado.onrender.com/api/events");
     setEvents(res.data);
   };
 
@@ -37,11 +37,11 @@ export default function EventsAdmin() {
 
     if (editingId) {
       await axios.put(
-        `http://localhost:8080/api/events/${editingId}`,
+        `https://torado.onrender.com/api/events/${editingId}`,
         form
       );
     } else {
-      await axios.post("http://localhost:8080/api/events", form);
+      await axios.post("https://torado.onrender.com/api/events", form);
     }
 
     setForm({
@@ -64,7 +64,7 @@ export default function EventsAdmin() {
 
   const deleteEvent = async (id) => {
     if (!window.confirm("Delete this event?")) return;
-    await axios.delete(`http://localhost:8080/api/events/${id}`);
+    await axios.delete(`https://torado.onrender.com/api/events/${id}`);
     fetchEvents();
   };
 

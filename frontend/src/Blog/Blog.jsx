@@ -6,7 +6,7 @@ export default function Blog() {
   const [blogs, setBlogs] = useState([]);
 
   useEffect(() => {
-    axios.get("http://localhost:8080/api/blogs")
+    axios.get("https://torado.onrender.com/api/blogs")
       .then(res => setBlogs(res.data));
   }, []);
 

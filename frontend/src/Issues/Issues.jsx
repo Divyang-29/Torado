@@ -7,7 +7,7 @@ export default function Issues() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/issues")
+      .get("https://torado.onrender.com/api/issues")
       .then((res) => setIssues(res.data));
   }, []);
 

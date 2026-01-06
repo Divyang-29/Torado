@@ -16,7 +16,7 @@ export default function BlogAdmin() {
   useEffect(() => {
     const loadBlogs = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/api/blogs");
+        const res = await axios.get("https://torado.onrender.com/api/blogs");
         setBlogs(res.data);
       } catch (err) {
         console.error("Fetch blogs error:", err);
@@ -36,7 +36,7 @@ export default function BlogAdmin() {
 
   /* 🔁 REFETCH BLOGS (NO EFFECT) */
   const refreshBlogs = async () => {
-    const res = await axios.get("http://localhost:8080/api/blogs");
+    const res = await axios.get("https://torado.onrender.com/api/blogs");
     setBlogs(res.data);
   };
 
@@ -50,11 +50,11 @@ export default function BlogAdmin() {
 
       if (editingId) {
         await axios.put(
-          `http://localhost:8080/api/blogs/${editingId}`,
+          `https://torado.onrender.com/api/blogs/${editingId}`,
           form
         );
       } else {
-        await axios.post("http://localhost:8080/api/blogs", form);
+        await axios.post("https://torado.onrender.com/api/blogs", form);
       }
 
       setForm({ title: "", image: "", description: "" });
@@ -80,7 +80,7 @@ export default function BlogAdmin() {
     if (!window.confirm("Are you sure you want to delete this blog?")) return;
 
     try {
-      await axios.delete(`http://localhost:8080/api/blogs/${id}`);
+      await axios.delete(`https://torado.onrender.com/api/blogs/${id}`);
       refreshBlogs();
     } catch (err) {
       console.error("Delete blog error:", err);

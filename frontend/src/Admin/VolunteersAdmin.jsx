@@ -8,7 +8,7 @@ export default function VolunteersAdmin() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/volunteer")
+      .get("https://torado.onrender.com/api/volunteer")
       .then((res) => setVolunteers(res.data))
       .finally(() => setLoading(false));
   }, []);
