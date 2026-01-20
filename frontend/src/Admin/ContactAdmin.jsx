@@ -8,7 +8,7 @@ export default function ContactAdmin() {
 
   useEffect(() => {
     axios
-      .get("http://localhost:8080/api/contact")
+      .get("https://torado.onrender.com/api/contact")
       .then((res) => setContacts(res.data))
       .finally(() => setLoading(false));
   }, []);

@@ -12,7 +12,7 @@ export default function DonationsAdmin() {
 
   const fetchDonations = async () => {
     try {
-      const res = await axios.get("http://localhost:8080/api/donate");
+      const res = await axios.get("https://torado.onrender.com/api/donate");
       setDonations(res.data);
     } catch (err) {
       console.error("FETCH DONATIONS ERROR:", err);
