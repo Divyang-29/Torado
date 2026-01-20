@@ -20,7 +20,7 @@ export default function HeroPage(){
         <Events/>
         <DonateSection/>
         <FightForNation/>
-        <Volunteers/>
+ 
         <Testimonials/>
         <Biography/>
         <BlogSection/>
